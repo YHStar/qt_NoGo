@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 
 #include <QApplication>
-#include<QPainter>
-#include <QFile>
 
 int main(int argc, char *argv[])
 {
