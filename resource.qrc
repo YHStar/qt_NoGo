@@ -2,6 +2,5 @@
     <qresource prefix="/">
         <file>bg_c</file>
         <file>w</file>
-        <file>music.wav</file>
     </qresource>
 </RCC>

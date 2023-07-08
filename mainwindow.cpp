@@ -4,7 +4,6 @@
 #include "socketthread.h"
 #include "msgthread.h"
 
-#include <QSoundEffect>
 int cnnt=1;
 
 int lDist = 60;
@@ -110,12 +109,6 @@ MainWindow::MainWindow(QWidget *parent)
     pa.setBrush(QPalette::Window,*pic);
     this->setPalette(pa);
 
-    //播放音频
-    QSoundEffect *music = new QSoundEffect();
-    music->setSource(QUrl::fromLocalFile(":/music.wav"));
-    music->setLoopCount(QSoundEffect::Infinite);  //设置无限循环
-    music->setVolume(0.5f);  //设置音量，在0到1之间
-    music->play();
 
     serverButton = new QPushButton("创建棋局（后手）", this);
     clientButton = new QPushButton("加入棋桌（先手）", this);
